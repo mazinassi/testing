@@ -1,0 +1,47 @@
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ body {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Inter', sans-serif;
+}
+
+ main {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .notVisible {
+  display: none;
+}
+
+ button {
+  border: none;
+  background-color: #45e9f5;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #28c7d5;
+}
+
+ @media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+}
